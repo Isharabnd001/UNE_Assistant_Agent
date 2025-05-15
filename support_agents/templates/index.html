@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNE Support Chat</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+<body>
+    <div class="chat-container">
+        
+        <header>
+            <img src="{% static 'images/une-logo.png' %}" alt="UNE Logo" class="logo">
+            <h1>UNE Support Chat</h1>
+        </header>
+        
+        <div class="chat-box" id="chat-box">
+        </div>
+
+        
+        <form id="chat-form">
+            <textarea id="user-input" rows="3" placeholder="Ask about UNE courses, class schedules, or even poems about student life at UNE..." required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!--  Start modal for loader -->
+<div id="loaderModal" class="modal">
+    <div class="modal-content">
+      <img src="{% static 'images/reading-book.gif' %}" alt="Loading..." width="80">
+      <p>Assitant is thinking...</p>
+    </div>
+  </div>
+      <!--  End modal for loader -->
+  
+    <script src="{% static 'js/chat.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.chat-container {
+    width: 90vw;
+    max-width: 800px;
+    height: calc(100vh - 100px); 
+    margin: 50px auto; 
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 2vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    background-color: #006400; 
+    color: #ffffff;
+    padding: 1.5vh 2vw;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 4vh;
+    margin-right: 1vw;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 1.5vh 2vw;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.message {
+    margin: 1.5vh 0;
+}
+
+.message.user {
+    text-align: right;
+    color: #006400;
+}
+
+.message.assistant {
+    text-align: left;
+    color: #000000;
+}
+
+#chat-form {
+    display: flex;
+    padding: 1.5vh 2vw;
+}
+
+#user-input {
+    flex: 1;
+    padding: 1.5vh 1vw;
+    font-size: 1rem;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    height: 10vh;
+    resize: none;
+    overflow-y: auto;
+}
+
+#chat-form button {
+    background-color: #006400;
+    color: #ffffff;
+    border: none;
+    padding: 1.5vh 2vw;
+    margin-left: 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loader {
+    margin: 2vh 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.message.assistant {
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin-top: 1vh;
+    background-color: #f0f4f9;
+    padding: 1.5vh 1vw;
+    border-radius: 10px;
+}
+
+header,
+#chat-form {
+    flex-shrink: 0;
+}
+
+
+.message.assistant.agent-label {
+    font-weight: bold;
+    background-color: #e6f4ea;
+    color: #006400; 
+    padding: 0.5vh 1vw 0;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
