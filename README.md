@@ -1,5 +1,9 @@
 **UNE Support Agent Documentation**
 
+
+![Description](UI_UNE_support.png)
+
+
 # Responsible AI Multi Agent UNE Support Bot
 
 This project is a responsible AI Multi Agent chatbot designed to assist students and staff at the **University of New England (UNE)** in **Armidale, Australia**. It uses **OpenAI Agents SDK** to enable multi-agent LLM orchestration for course related advices, poetry generation on life at UNE, and schedule inquiries on classes at UNE.
