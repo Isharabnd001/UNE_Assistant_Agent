@@ -4,6 +4,10 @@ Production version is deployed and available from following link
 
 http://4.254.63.45/
 
+**Disclaimer**
+
+This project was developed as part of an internal task and ntended solely for **non-commercial**, **internal demonstration purposes** and does **not claim any official affiliation** with UNE.  The use of the UNE name or logo in this project is for illustrative purposes only, based on publicly available resources. The application does not promote, distribute, or monetize any content and is **not publicly shared** 
+
 ![Description](UI_UNE_support.png)
 
 
